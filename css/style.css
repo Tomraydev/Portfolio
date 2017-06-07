@@ -1,0 +1,213 @@
+body {
+  padding:0px;
+  margin:0px;
+  font-family: 'Roboto', 'sans-serif';
+  color:#fff;
+}
+
+.header {
+  background-image: url('../images/laptop.jpg');
+  background-size:cover;
+  background-attachment: fixed;
+  height:100vh;
+}
+ul.header-menu {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.header-menu li a {
+  display:inline-block;
+  padding:8px 16px;
+  background-color: #333;
+  color:#ccc;
+  float:right;
+  font-size:1.3em;
+  letter-spacing:normal;
+  text-decoration:none;
+  opacity:0.5;
+}
+.header-menu li a:hover {
+  color:#fff;
+  opacity:1;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+}
+.title-wrap {
+  display:inline-block;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align:center;
+  background-color: rgba(51, 51, 51, 0.7);
+}
+.title {
+  display:inline-block;
+  padding:16px 32px;
+  font-size:2em
+}
+
+div#portfolio {
+  padding: 40px 8.33%;
+  background-color: #eee;
+  color:#333;
+}
+.portfolio-heading {
+  margin-bottom:40px;
+}
+.portfolio-item {
+  display:flex;
+  min-height:260px;
+  padding:32px 16px;
+  background-color: #ddd;
+  margin-bottom:16px;
+  overflow: inherit;
+}
+.portfolio-thumbnail {
+  flex:4;
+  position:relative;
+}
+.portfolio-thumbnail img.desktop {
+  position:absolute;
+  height:200px;
+  border: solid 2px #111;
+  border-radius:2px;
+  transform: perspective( 1000px ) rotateY( 30deg );
+  box-shadow:-1px 1px 10px #111;
+}
+.portfolio-thumbnail img.mobile {
+  position:absolute;
+  top:75px;
+  left:250px;
+  height:120px;
+  width:70px;
+  border: solid 2px #111;
+  border-bottom:solid 10px #111;
+  border-radius:2px;
+  transform: perspective( 800px ) rotateY( 30deg ) translateZ(60px);
+  box-shadow:-1px 1px 10px #111;
+}
+
+.portfolio-description {
+  flex:6;
+}
+.portfolio-description a:link,
+.portfolio-description a:visited {
+  font-size:1.3em;
+}
+.portfolio-description .feedback {
+  color:#666;
+  margin-top:10px;
+}
+.portfolio-description .signature {
+  float:right;
+  color:#111;
+  font-weight:bold;
+}
+
+#about {
+  padding: 80px 8.33%;
+  background-color: #fff;
+  color:#333;
+}
+.about-me {
+  word-wrap: break-word;
+  margin-bottom: 32px;
+  line-height: 150%;
+}
+#about ul {
+  list-style-type:none;
+}
+#about ul li {
+  display:inline-block;
+  text-align:center;
+  padding:0 8px;
+}
+#about i {
+  font-size:60px;
+  display:block;
+}
+/* Skills icons colors */
+  .icon-html5-alt {
+    color:orangered;
+  }
+  .icon-css3-alt {
+    color: #118ed1;
+  }
+  .icon-sass {
+    color: #cd669a;
+  }
+  .icon-bootstrap {
+    color: #563d7c;
+  }
+  .icon-javascript-alt {
+    color: #f0db4f;
+  }
+  .icon-jquery {
+    color: #0868ac;
+  }
+  .icon-nodejs {
+    color: #78b743;
+  }
+  .icon-gulp {
+    color: #eb4a4b;
+  }
+  .icon-php-alt {
+    color: #5a69a6;
+  }
+  .icon-mysql {
+    color: #00618a;
+  }
+  .icon-wordpress {
+    color: #00a7da;
+  }
+  .icon-git {
+    color: #f05033;
+  }
+/* Contact footer styles */
+#contact {
+  display:flex;
+  padding: 30px 8.33%;
+  background-color: #4b4b4b;
+  color:#eee;
+}
+.map-container {
+  flex:1;
+  text-align:center;
+}
+.contact-links {
+  flex:1;
+  text-align:center;
+}
+.contact-links ul {
+  list-style-type: none;
+  display:inline-block;
+  vertical-align: text-top;
+  text-align: left;
+}
+.contact-links i {
+  margin-right:8px;
+}
+.contact-links a {
+  color:#eee;
+  font-size:20px;
+  line-height:30px;
+}
+.contact-links a:hover {
+  text-decoration:none;
+  color: #1d9edd;
+}
+.contact-links h1 {
+  margin-bottom:32px;
+}
+/* Google Map */
+#map {
+  width:100%;
+  height:300px;
+}
+#map .map-control {
+  display:none;
+}

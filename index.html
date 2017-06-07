@@ -1,0 +1,244 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <title>Tomasz Rajchel - Web Development</title> <!-- max 70 characters -->
+
+  <meta charset="utf-8">
+  <meta name="description" content="">    <!-- Define a description of your web page -->
+  <meta name="author" content="Thomas Ray">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Setting the viewport to make your website look good on all devices-->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="font-mfizz-2.4.1/font-mfizz.css"> <!-- skills icons -->
+  <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Adding Bootstrap -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon"> <!-- ADD A FAVICON HERE -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"> <!-- jQuery UI styles -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> <!-- Roboto Font -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Custom CSS file -->
+</head>
+<body>
+  <div class="header">
+
+    <ul class="header-menu clearfix">
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+
+    <div class="title-wrap">
+      <h1 class="title">Hello, my name is Tomasz Rajchel</h1>
+      <p>I'm a Freelance Web Developer</p>
+    </div>
+  </div>
+
+  <div id="about">
+    <h1>About me</h1>
+    <h4 class="about-me">
+      I have over <span id="experience"></span> months experience in web development. <br>
+      I'm Self motivated and keen to learn new technologies and methodologies. <br>
+      My key values are ingenuity, effort, communication,
+      problem solving and the ability to be efficient with your time and resources. <br>
+      I'm familiar with modern industry standards. My skills include:
+    </h4>
+    <ul>
+      <li><i class="icon-html5-alt"></i><span>HTML5</span></li>
+      <li><i class="icon-css3-alt"></i><span>CSS3</span></li>
+      <li><i class="icon-javascript-alt"></i><span>Javascript</span></li>
+      <li><i class="icon-php-alt"></i><span>PHP</span></li>
+      <li><i class="icon-mysql"></i><span>MySQL</span></li>
+      <li><i class="icon-wordpress"></i><span>WordPress</span></li>
+      <li><i class="icon-jquery"></i><span>jQuery</span></li>
+      <li><i class="icon-sass"></i><span>Sass</span></li>
+      <li><i class="icon-bootstrap"></i><span>Bootstrap</span></li>
+      <li><i class="icon-nodejs"></i><span>Node.js</span></li>
+      <li><i class="icon-gulp"></i><span>Gulp</span></li>
+      <li><i class="icon-git"></i><span>Git</span></li>
+    </ul>
+
+
+  </div> <!-- #about -->
+
+  <div id="portfolio">
+
+    <h1 class="portfolio-heading">My Work</h1>
+    <div class="portfolio-item">
+      <div class="portfolio-thumbnail">
+        <a href="http://monk-parrot-51827.netlify.com" target="_blank">
+          <img src="images/cars.png" alt="Portfolio thumbnail" class="desktop">
+        </a>
+        <a href="http://monk-parrot-51827.netlify.com" target="_blank">
+          <img src="images/cars-mobile.png" alt="Portfolio thumbnail" class="mobile">
+        </a>
+      </div>
+      <div class="portfolio-description">
+        <h3>PSD to HTML Homepage Conversion</h3>
+        <p>A detailed and responsive webpage based on a desing that was provided.</p>
+        <a href="http://monk-parrot-51827.netlify.com" target="_blank">Visit site&raquo;</a>
+        <p class="feedback">"Tomasz was very quick with his work managing to deliver earlier
+          than an already tight schedule. The work was completed to a high standard,
+          I will be using Tomasz again in the near future"</p>
+          <p class="signature clearfix">- Ben Henry</p>
+      </div>
+    </div> <!-- .portfolio-item -->
+
+    <div class="portfolio-item">
+      <div class="portfolio-thumbnail">
+        <a href="https://clown-malcolm-45770.netlify.com" target="_blank">
+          <img src="images/agency.png" alt="Portfolio thumbnail" class="desktop">
+        </a>
+        <a href="https://clown-malcolm-45770.netlify.com" target="_blank">
+          <img src="images/cars-mobile.png" alt="Portfolio thumbnail" class="mobile">
+        </a>
+      </div>
+      <div class="portfolio-description">
+        <h3>Agency Website</h3>
+        <p>A generic agency website, design based on ZURB foundation Template</p>
+        <a href="https://clown-malcolm-45770.netlify.com" target="_blank">Visit site&raquo;</a>
+      </div>
+    </div> <!-- .portfolio-item -->
+
+    <div class="portfolio-item">
+      <div class="portfolio-thumbnail">
+        <a href="https://captain-stoves-76350.netlify.com" target="_blank">
+          <img src="images/parallax.png" alt="Portfolio thumbnail" class="desktop">
+        </a>
+        <a href="https://captain-stoves-76350.netlify.com" target="_blank">
+          <img src="images/cars-mobile.png" alt="Portfolio thumbnail" class="mobile">
+        </a>
+      </div>
+      <div class="portfolio-description">
+        <h3>Agency Website</h3>
+        <p>A generic agency website, design based on ZURB foundation Template</p>
+        <a href="https://captain-stoves-76350.netlify.com" target="_blank">Visit site&raquo;</a>
+      </div>
+    </div> <!-- .portfolio-item -->
+
+  </div> <!-- #portfolio -->
+
+  <div id="contact">
+    <div class="map-container">
+      <div id="map"></div>
+      <script>
+      function initMap() {
+
+        var dublin = {lat: 53.350, lng: -6.260};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 11,
+          center: dublin,
+          disableDefaultUI: true,
+          styles: [
+            {
+              "featureType": "administrative",
+              "elementType": "labels.text",
+              "stylers": [
+                {
+                  "color": "#126085"
+                }
+              ]
+            },
+            {
+              "featureType": "administrative",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#1ea0df"
+                }
+              ]
+            },
+            {
+              "featureType": "administrative",
+              "elementType": "labels.text.stroke",
+              "stylers": [
+                {
+                  "color": "#0c4058"
+                }
+              ]
+            },
+            {
+              "featureType": "landscape",
+              "stylers": [
+                {
+                  "color": "#4b4b4b"
+                }
+              ]
+            },
+            {
+              "featureType": "poi",
+              "elementType": "geometry",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            },
+            {
+              "featureType": "poi",
+              "elementType": "labels",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            },
+            {
+              "featureType": "road",
+              "stylers": [
+                {
+                  "color": "#a3a3a3"
+                }
+              ]
+            },
+            {
+              "featureType": "road",
+              "elementType": "labels",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            },
+            {
+              "featureType": "transit",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            }
+          ] /* End of custom map styles */
+        });
+
+        var marker = new google.maps.Marker({
+          icon: 'http://maps.google.com/mapfiles/ms/micons/blue-dot.png',
+          position: dublin,
+          map: map
+        });
+
+
+      }
+    </script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdpjy6sOdLlsv5oFNus9J811OstqAOCg0&callback=initMap"></script>
+    </div>
+
+    <div class="contact-links">
+      <h1>Find Me!</h1>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/tomasz-rajchel-b406b6138/"><i class="fa fa-linkedin-square" aria-hidden="true"></i><span>LinkedIn</span></a></li>
+        <li><a href="https://www.upwork.com/freelancers/~01f1c913ad50dde913"><i class="fa fa-arrow-up" aria-hidden="true"></i><span>Upwork</span></a></li>
+        <li><a href="https://twitter.com/Tomraydev"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twitter</span></a></li>
+      </ul>
+      <ul>
+        <li><a href="https://github.com/Tomraydev"><i class="fa fa-github" aria-hidden="true"></i><span>GitHub</span></a></li>
+        <li><a href="https://stackoverflow.com/users/7525900/thomas-ray"><i class="fa fa-stack-overflow" aria-hidden="true"></i><span>StackOverflow</span></a></li>
+        <li><a href="https://codepen.io/Tomraydev/"><i class="fa fa-codepen" aria-hidden="true"></i><span>CodePen</span></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- import jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> <!-- import jQuery UI -->
+  <script language="Javascript" type="text/javascript" src="js/script.js"></script> <!-- Custom Javascript file -->
+</body>
+</html>
