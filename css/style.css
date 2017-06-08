@@ -42,7 +42,7 @@ body {
   padding:4px;
 }
 .query {
-  width:100%;
+  max-width:100%;
   padding:8px;
 }
 .query textarea {
