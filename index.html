@@ -19,10 +19,30 @@
   <link rel="stylesheet" href="css/style.css"> <!-- Custom CSS file -->
 </head>
 <body>
+  <div class="contact">
+    <div class="form-container">
+      <h1>Get in touch</h1>
+      <h3>tomraydev@gmail.com</h3>
+      <form action="http://formspree.io/tomraydev@gmail.com" method="POST">
+        <div class="top-bar">
+          <input type="text" name="name" placeholder="Name *" class="input-1" required>
+          <input type="email" name="_replyto" placeholder="E-mail *" class="input-1" required>
+        </div>
+        <div class="query">
+          <textarea name="message" id="" placeholder="Type your message here *" required></textarea>
+          <input type="text" name="_gotcha" class="spam-filter" />
+        </div>
+        <div class="submit-container">
+          <input type="submit" value="Submit" class="submit-1">
+        </div>
+      </form>
+    </div>
+  </div>
   <div class="header">
 
     <ul class="header-menu clearfix">
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#connect">Find me</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#about">About</a></li>
     </ul>
@@ -75,10 +95,10 @@
       <div class="portfolio-description">
         <h3>PSD to HTML Homepage Conversion</h3>
         <p>A detailed and responsive webpage based on a desing that was provided.</p>
-        <a href="http://monk-parrot-51827.netlify.com" target="_blank">Visit site&raquo;</a>
+        <a href="http://monk-parrot-51827.netlify.com" target="_blank" class="btn-1">Visit site&raquo;</a>
         <p class="feedback">"Tomasz was very quick with his work managing to deliver earlier
           than an already tight schedule. The work was completed to a high standard,
-          I will be using Tomasz again in the near future"</p>
+          I will be using Tomasz again in the near future."</p>
           <p class="signature clearfix">- Ben Henry</p>
       </div>
     </div> <!-- .portfolio-item -->
@@ -89,13 +109,13 @@
           <img src="images/agency.png" alt="Portfolio thumbnail" class="desktop">
         </a>
         <a href="https://clown-malcolm-45770.netlify.com" target="_blank">
-          <img src="images/cars-mobile.png" alt="Portfolio thumbnail" class="mobile">
+          <img src="images/agency-mobile.png" alt="Portfolio thumbnail" class="mobile">
         </a>
       </div>
       <div class="portfolio-description">
         <h3>Agency Website</h3>
-        <p>A generic agency website, design based on ZURB foundation Template</p>
-        <a href="https://clown-malcolm-45770.netlify.com" target="_blank">Visit site&raquo;</a>
+        <p>A generic agency website, design based on ZURB foundation Template.</p>
+        <a href="https://clown-malcolm-45770.netlify.com" target="_blank" class="btn-1">Visit site&raquo;</a>
       </div>
     </div> <!-- .portfolio-item -->
 
@@ -105,19 +125,19 @@
           <img src="images/parallax.png" alt="Portfolio thumbnail" class="desktop">
         </a>
         <a href="https://captain-stoves-76350.netlify.com" target="_blank">
-          <img src="images/cars-mobile.png" alt="Portfolio thumbnail" class="mobile">
+          <img src="images/parallax-mobile.png" alt="Portfolio thumbnail" class="mobile">
         </a>
       </div>
       <div class="portfolio-description">
-        <h3>Agency Website</h3>
-        <p>A generic agency website, design based on ZURB foundation Template</p>
-        <a href="https://captain-stoves-76350.netlify.com" target="_blank">Visit site&raquo;</a>
+        <h3>Parallax Website</h3>
+        <p>A website built to test the parallax video effect.</p>
+        <a href="https://captain-stoves-76350.netlify.com" target="_blank" class="btn-1">Visit site&raquo;</a>
       </div>
     </div> <!-- .portfolio-item -->
 
   </div> <!-- #portfolio -->
 
-  <div id="contact">
+  <div id="connect">
     <div class="map-container">
       <div id="map"></div>
       <script>
@@ -222,17 +242,17 @@
       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdpjy6sOdLlsv5oFNus9J811OstqAOCg0&callback=initMap"></script>
     </div>
 
-    <div class="contact-links">
+    <div class="connect-links">
       <h1>Find Me!</h1>
       <ul>
-        <li><a href="https://www.linkedin.com/in/tomasz-rajchel-b406b6138/"><i class="fa fa-linkedin-square" aria-hidden="true"></i><span>LinkedIn</span></a></li>
-        <li><a href="https://www.upwork.com/freelancers/~01f1c913ad50dde913"><i class="fa fa-arrow-up" aria-hidden="true"></i><span>Upwork</span></a></li>
-        <li><a href="https://twitter.com/Tomraydev"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twitter</span></a></li>
+        <li><a href="https://www.linkedin.com/in/tomasz-rajchel-b406b6138/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i><span>LinkedIn</span></a></li>
+        <li><a href="https://www.upwork.com/freelancers/~01f1c913ad50dde913" target="_blank"><i class="fa fa-arrow-up" aria-hidden="true"></i><span>Upwork</span></a></li>
+        <li><a href="https://twitter.com/Tomraydev" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twitter</span></a></li>
       </ul>
       <ul>
-        <li><a href="https://github.com/Tomraydev"><i class="fa fa-github" aria-hidden="true"></i><span>GitHub</span></a></li>
-        <li><a href="https://stackoverflow.com/users/7525900/thomas-ray"><i class="fa fa-stack-overflow" aria-hidden="true"></i><span>StackOverflow</span></a></li>
-        <li><a href="https://codepen.io/Tomraydev/"><i class="fa fa-codepen" aria-hidden="true"></i><span>CodePen</span></a></li>
+        <li><a href="https://github.com/Tomraydev" target="_blank"><i class="fa fa-github" aria-hidden="true"></i><span>GitHub</span></a></li>
+        <li><a href="https://stackoverflow.com/users/7525900/thomas-ray" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i><span>StackOverflow</span></a></li>
+        <li><a href="https://codepen.io/Tomraydev/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i><span>CodePen</span></a></li>
       </ul>
     </div>
   </div>

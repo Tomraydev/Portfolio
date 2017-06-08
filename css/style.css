@@ -4,6 +4,75 @@ body {
   font-family: 'Roboto', 'sans-serif';
   color:#fff;
 }
+.contact {
+  display:block;
+  position:fixed;
+  background-color: #2a3a3f;
+  width:100%;
+  height:100%;
+  overflow-y:auto;
+  z-index:10;
+}
+.form-container {
+  position:relative;
+  top:10%;
+  left:50%;
+  transform: translateX(-50%);
+  width:500px;
+  text-align:left;
+}
+.form-container h1,
+.form-container h3 {
+  text-align: center;
+  font-weight:400;
+}
+.top-bar {
+  margin-top: 32px;
+  margin-bottom: 16px;
+  display:flex;
+}
+.input-1 {
+  flex:1;
+  border:solid 2px #ccc;
+  border-radius:3px;
+  background-color: #2a3a3f;
+  box-sizing: border-box;
+  font-size:1.2em;
+  margin:8px;
+  padding:4px;
+}
+.query {
+  width:100%;
+  padding:8px;
+}
+.query textarea {
+  resize:vertical;
+  width:100%;
+  height:200px;
+  border:solid 2px #ccc;
+  border-radius:3px;
+  background-color: #2a3a3f;
+  padding:4px;
+  font-size:1.2em;
+}
+.spam-filter {
+  display:none;
+}
+.submit-container {
+  text-align:center;
+}
+.submit-1 {
+  background-color: #2a3a3f;
+  font-size:1.2em;
+  border: solid 2px #1d9edd;
+  border-radius:20px;
+  padding:2px 32px;
+  margin-top:8px;
+  margin-bottom:50px;
+}
+.submit-1:hover {
+  background-color: #1a2a2f;
+}
 
 .header {
   background-image: url('../images/laptop.jpg');
@@ -50,10 +119,11 @@ ul.header-menu {
   font-size:2em
 }
 
-div#portfolio {
+#portfolio {
   padding: 40px 8.33%;
-  background-color: #eee;
+  background: linear-gradient(to bottom, #eee 0%,#fff 100%);
   color:#333;
+  outline:none;
 }
 .portfolio-heading {
   margin-bottom:40px;
@@ -90,6 +160,11 @@ div#portfolio {
   transform: perspective( 800px ) rotateY( 30deg ) translateZ(60px);
   box-shadow:-1px 1px 10px #111;
 }
+.portfolio-thumbnail img.mobile:hover,
+.portfolio-thumbnail img.desktop:hover,
+.btn-1:hover {
+  box-shadow:-1px 1px 10px #4286f4;
+}
 
 .portfolio-description {
   flex:6;
@@ -98,20 +173,37 @@ div#portfolio {
 .portfolio-description a:visited {
   font-size:1.3em;
 }
+.portfolio-description h3 {
+  color:#111;
+}
 .portfolio-description .feedback {
   color:#666;
   margin-top:10px;
 }
 .portfolio-description .signature {
   float:right;
-  color:#111;
+  color:#333;
   font-weight:bold;
 }
+.btn-1 {
+  display:inline-block;
+  background-color: #bbb;
+  padding:4px 8px;
+  border-radius:4px;
+  color:#111;
+}
+.btn-1:hover {
+  background-color: #aaa;
+  color:#111;
+  text-decoration:none;
+}
+
 
 #about {
   padding: 80px 8.33%;
-  background-color: #fff;
+  background: linear-gradient(to bottom, #eee 0%,#fff 100%);
   color:#333;
+  outline:none;
 }
 .about-me {
   word-wrap: break-word;
@@ -167,8 +259,8 @@ div#portfolio {
   .icon-git {
     color: #f05033;
   }
-/* Contact footer styles */
-#contact {
+/* connect footer styles */
+#connect {
   display:flex;
   padding: 30px 8.33%;
   background-color: #4b4b4b;
@@ -178,29 +270,29 @@ div#portfolio {
   flex:1;
   text-align:center;
 }
-.contact-links {
+.connect-links {
   flex:1;
   text-align:center;
 }
-.contact-links ul {
+.connect-links ul {
   list-style-type: none;
   display:inline-block;
   vertical-align: text-top;
   text-align: left;
 }
-.contact-links i {
+.connect-links i {
   margin-right:8px;
 }
-.contact-links a {
+.connect-links a {
   color:#eee;
   font-size:20px;
   line-height:30px;
 }
-.contact-links a:hover {
+.connect-links a:hover {
   text-decoration:none;
   color: #1d9edd;
 }
-.contact-links h1 {
+.connect-links h1 {
   margin-bottom:32px;
 }
 /* Google Map */
@@ -210,4 +302,15 @@ div#portfolio {
 }
 #map .map-control {
   display:none;
+}
+
+
+
+@media only screen and (max-width:600px) {
+  .top-bar {
+    flex-direction:column;
+  }
+  .form-container {
+    width:80%;
+  }
 }
