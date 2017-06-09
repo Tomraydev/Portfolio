@@ -46,5 +46,12 @@ $( document ).ready(function() {
       }
     });
 
-
+  $('.btn-contact').click(function() {
+       $('.contact-menu').animate({'left':'0'},300);
+       $('body').css('overflow', 'hidden');  //Gets rid of double scrollbar
+  });
+  $('.btn-back').click(function() {
+       $('.contact-menu').animate({'left':'-100%'},300);
+       $('body').css('overflow', 'auto'); // Makes body scrollable again
+  });
 });
