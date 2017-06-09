@@ -28,7 +28,8 @@ body {
   cursor:pointer;
 }
 .btn-back:hover {
-  background-color: #333;
+  background-color: #1e292d;
+  color:#111;
 }
 
 .form-container {
@@ -135,13 +136,13 @@ ul.header-menu {
 }
 
 #portfolio {
-  display:none;
   padding: 40px 8.33%;
   background: linear-gradient(to bottom, #eee 0%,#fff 100%);
   color:#333;
   outline:none;
 }
-.portfolio-heading {
+.portfolio-heading,
+.about-heading {
   margin-bottom:40px;
 }
 .portfolio-item {
@@ -155,6 +156,7 @@ ul.header-menu {
 .portfolio-thumbnail {
   flex:4;
   position:relative;
+  min-height:220px;
 }
 .portfolio-thumbnail img.desktop {
   position:absolute;
@@ -291,9 +293,9 @@ ul.header-menu {
   text-align:center;
 }
 .connect-links ul {
-  list-style-type: none;
   display:inline-block;
-  vertical-align: text-top;
+  list-style-type: none;
+  padding:0;
   text-align: left;
 }
 .connect-links i {
@@ -301,15 +303,23 @@ ul.header-menu {
 }
 .connect-links a {
   color:#eee;
-  font-size:20px;
-  line-height:30px;
+  font-size:25px;
 }
 .connect-links a:hover {
   text-decoration:none;
-  color: #1d9edd;
 }
 .connect-links h1 {
   margin-bottom:32px;
+}
+.linkedIn:hover,
+.linkedIn:focus {
+  color: #0077B5;
+}
+.upwork:hover {
+  color: #37a000;
+}
+.twitter:hover {
+  color: #1da1f2;
 }
 /* Google Map */
 #map {
@@ -320,8 +330,20 @@ ul.header-menu {
   display:none;
 }
 
-
-
+@media only screen and (max-width:400px) {
+  .header-menu li {
+    text-align:center;
+    border: solid 1px #333;
+    border-top:none;
+  }
+  .header-menu li:nth-child(1) {
+    border-top:solid 1px #333;
+  }
+  .header-menu li a {
+    float:none;
+    width:100%;
+  }
+}
 @media only screen and (max-width:600px) {
   .top-bar {
     flex-direction:column;
@@ -334,5 +356,34 @@ ul.header-menu {
     position:relative;
     left:50%;
     transform: translateX(-50%);
+  }
+  .portfolio-thumbnail {
+    min-height:120px;
+  }
+  .portfolio-thumbnail img.desktop {
+    height:120px;
+  }
+  .portfolio-thumbnail img.mobile {
+    top:50px;
+    left:125px;
+    height:72px;
+    width:42px;
+  }
+  .portfolio-heading,
+  .about-heading {
+  text-align:center;
+  }
+  .title-wrap {
+    width:80%;
+  }
+}
+@media only screen and (max-width:800px) {
+  #connect {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width:1200px) {
+  .portfolio-item {
+    flex-direction: column;
   }
 }
