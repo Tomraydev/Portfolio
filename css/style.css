@@ -4,7 +4,9 @@ body {
   font-family: 'Roboto', 'sans-serif';
   color:#fff;
 }
-
+a {
+  text-decoration: none;
+}
 .contact-menu {
   display:block;
   position:fixed;
