@@ -10,7 +10,7 @@ a {
 .contact-menu {
   display:block;
   position:fixed;
-  left: -100%;
+  top:-100%;
   background-color: #2a3a3f;
   width:100%;
   height:100%;
@@ -44,7 +44,6 @@ a {
 .form-container h1 {
   font-size:2em;
   text-align: center;
-  font-weight:400;
 }
 .form-container h3 {
   font-size:1.5em;
@@ -114,19 +113,18 @@ ul.header-menu {
 }
 .header-menu li a {
   display:inline-block;
-  padding:8px 16px;
-  background-color: #333;
-  color:#ccc;
+  padding:12px 24px;
+  background-color: rgba(51, 51, 51, 0.7);
+  color:#fff;
   float:right;
   font-size:1.3em;
   letter-spacing:normal;
   text-decoration:none;
-  opacity:0.5;
   box-sizing: border-box;
 }
 .header-menu li a:hover {
   color:#fff;
-  opacity:1;
+  background-color: rgba(51, 51, 51, 1);
 }
 .clearfix::after {
   content: "";
@@ -140,12 +138,21 @@ ul.header-menu {
   transform: translate(-50%,-50%);
   text-align:center;
   background-color: rgba(51, 51, 51, 0.7);
+  padding:16px 24px;
 }
 .title {
   display:inline-block;
-  padding:16px 32px;
+  margin:0;
   font-size:2em;
   font-weight:500;
+}
+.title-link {
+  color:#fff;
+  margin-left:10px;
+  font-size:1.4em;
+}
+.title-link:hover {
+  color: #0077B5;
 }
 
 #portfolio {
@@ -192,8 +199,7 @@ ul.header-menu {
   box-shadow:-1px 1px 10px #111;
 }
 .portfolio-thumbnail img.mobile:hover,
-.portfolio-thumbnail img.desktop:hover,
-.btn-1:hover {
+.portfolio-thumbnail img.desktop:hover {
   box-shadow:-1px 1px 10px #4286f4;
 }
 
@@ -242,11 +248,13 @@ ul.header-menu {
 }
 #about ul {
   list-style-type:none;
+  padding:0;
+  text-align: center;
 }
 #about ul li {
   display:inline-block;
   text-align:center;
-  padding:0 8px;
+  padding:8px;
 }
 #about i {
   font-size:60px;
@@ -314,24 +322,55 @@ ul.header-menu {
   margin-right:8px;
 }
 .connect-links a {
+  display:inline-block;
   color:#eee;
-  font-size:25px;
+  font-size:1.2em;
+  margin-bottom:8px;
+  box-shadow: 0px 2px #333;
+  padding:4px 16px;
+  border-radius:3px;
 }
 .connect-links a:hover {
   text-decoration:none;
 }
-.connect-links h1 {
+.connect-links a span {
+  font-size:0.8em;
+  vertical-align: middle;
+}
+.connect-links a i {
+  vertical-align: middle;
+}
+.btn-touch {
+  display: inline-block;
+  padding:8px 24px;
   margin-bottom:32px;
+  border-radius:3px;
+  background-color: #3b3b3b;
+  color:#eee;
+}
+.btn-touch:hover {
+  border: solid 2px #333;
+  margin-bottom:28px;
+}
+.linkedIn {
+  background-color: #0077B5;
+  border-bottom: solid 2px #005784;
+}
+.upwork {
+  background-color: #37a000;
+  border-bottom: solid 2px #2b7c01;
+}
+.twitter {
+  background-color: #1da1f2;
+  border-bottom: solid 2px #1576b2;
 }
 .linkedIn:hover,
-.linkedIn:focus {
-  color: #0077B5;
-}
-.upwork:hover {
-  color: #37a000;
-}
+.upwork:hover,
 .twitter:hover {
-  color: #1da1f2;
+  margin-top:2px;
+  margin-bottom:7px;
+  box-shadow: 0 1px #333;
+  border-bottom-width: 1px;
 }
 /* Google Map */
 #map {
