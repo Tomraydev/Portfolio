@@ -206,8 +206,7 @@ ul.header-menu {
 .portfolio-description {
   flex:6;
 }
-.portfolio-description a:link,
-.portfolio-description a:visited {
+.portfolio-description a {
   font-size:1.3em;
 }
 .portfolio-description h3 {
