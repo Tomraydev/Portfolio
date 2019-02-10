@@ -4,7 +4,7 @@ $( document ).ready(function() {
   // Current experience calculator
   function writeExperience() {
     var date = new Date();
-    var experience = (date.getFullYear() - 2017) * 12 + 2 + date.getMonth();
+    var experience = 6 //(date.getFullYear() - 2017) * 12 + 2 + date.getMonth();
     $('#experience').html(experience);
   }
   writeExperience();
