@@ -4,6 +4,13 @@ body {
   font-family: 'Roboto', 'sans-serif';
   color:#eee;
 }
+.navbar {
+  background-color: #4F4D53;
+  min-height: 48px;
+}
+.navbar img {
+  height: 100%;
+}
 a {
   text-decoration: none;
 }
